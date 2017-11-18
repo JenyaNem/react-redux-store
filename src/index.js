@@ -9,9 +9,9 @@ import {syncHistoryWithStore} from 'react-router-redux'
 import {Router, Route, browserHistory} from 'react-router'
 import {Provider} from 'react-redux'
 
-import reducers from 'reducers'
-import Layout from 'containers/layout'
-import Phones from 'containers/phones'
+import reducers from './modules/reducers'
+import Layout from './modules/containers/layout'
+import Phones from './modules/containers/phones'
 
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
